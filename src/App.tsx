@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import styled from 'styled-components'
 
-function App() {
+import { Dashboard } from "./components/Dashboard";
+import { Header } from "./components/Header";
+import { GlobalStyle } from "./styles/global"
+
+// const Title = styled.h1`
+//   color: #8257e6;
+//   font-size: 64px;
+
+//   /*encadeamento igual ao sass*/
+//   /* button {
+//     background: #8257e6;
+//   } */
+// `
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <Dashboard />
+    </>
   );
 }
-
-export default App;
